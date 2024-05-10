@@ -7,5 +7,8 @@ public class SelfAdd {
         int c = ++a;	// c=3，此时先自增，再赋值
         System.out.println(b);
         System.out.println(c);
+        int x = 200;
+        byte y = (byte)x;
+        System.out.println(y);
     }
 }
