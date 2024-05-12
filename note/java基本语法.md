@@ -364,8 +364,8 @@ public class ScannerDemo1{
    int a = 10, b = 10;
    boolean result = ++a < 9 && ++b < 9
    // a = 11, b = 10, result = false
-   boolean result = ++a < 9 && ++b < 9
-   // a = 11, b = 11, result = false    
+   boolean result = ++a < 20 || ++b < 9
+   // a = 11, b = 10, result = true    
    ```
 
 8. 三元运算符
