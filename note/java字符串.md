@@ -121,3 +121,8 @@
        <img src="images\字符串拼接.png" alt="字符串" width="100%" height="100%">
    </div>
 
+2. 字符串原理
+
+   <div style="text-align:center">
+       <img src="images\字符串原理.png" alt="字符串" width="100%" height="100%">
+   </div>
