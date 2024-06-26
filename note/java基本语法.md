@@ -73,12 +73,12 @@ public class Demo {
 
 **特殊类型**
 
-    ```java
-    '\t'	制表符		在打印的时候，把前面的字符串长度补齐到8，或8的整数倍。
-    		System.out.println("name" + '\t' + "age");		name+四个空格+age
-        	System.out.println("tom" + '\t' + "23");		tom+五个空格+23
-    注意：在cmd中补8的倍数，在idea中默认是补4的倍数。
-    ```
+```java
+'\t'	制表符		在打印的时候，把前面的字符串长度补齐到8，或8的整数倍。
+		System.out.println("name" + '\t' + "age");		name+四个空格+age
+    	System.out.println("tom" + '\t' + "23");		tom+五个空格+23
+注意：在cmd中补8的倍数，在idea中默认是补4的倍数。
+```
 
 #### 三、变量
 
@@ -373,8 +373,6 @@ public class ScannerDemo1{
    格式：关系表达式 ？ 表达式1 ：表达式2 ；
 
    ​			关系表达式为真，则取表达式1；关系表达式为假，则取表达式2。
-
-   
 
 9. 运算符优先级
 

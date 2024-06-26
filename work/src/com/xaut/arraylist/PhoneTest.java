@@ -16,6 +16,8 @@ public class PhoneTest {
         phones.add(p1);
         phones.add(p2);
         phones.add(p3);
+
+        phones.iterator();
         
         ArrayList<Phone> res = getPhones(phones);
 

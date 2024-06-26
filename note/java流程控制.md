@@ -142,7 +142,7 @@ switch (表达式) {
 
 + case穿透
 
-  不写break会引发穿透现象
+  不写break会引发穿透现象（当case与expression匹配后，会依次执行后面的代码，直到遇到break等跳出语句，或达到switch块的末尾）
 
 + switch在JDK12的新特性
 
@@ -174,9 +174,11 @@ switch (表达式) {
   //2.使用switch进行匹配
   switch (week){
       case 1:
-          System.out.println("工作日")；
+          System.out.println("工作日");
+          break;
       case 2:
-          System.out.println("工作日")；
+          System.out.println("工作日");
+          break;
       ......
       //使用case穿透简化代码
       case 1:

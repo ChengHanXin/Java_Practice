@@ -103,36 +103,35 @@
 
 ​	方法都存在栈内存中，在定义方法时相当于压栈，而当执行方法时相当于出栈。
 
-    ```java
-    public class MethodDemo {
-        public static void main(string[] args){
-            eat();
-        }
-        public static void eat() {
-            study();
-            system.out.println("吃饭");
-            sleep();
-        }
-        public static void sleep(){
-            system.out.print1n("睡觉");
-        }
-        public static void study(){
-            system.out.print1n("学习");
-        }     
+```java
+public class MethodDemo {
+    public static void main(string[] args){
+        eat();
     }
-    
-    /*
-    	1.main方法先进栈
-    	2.main方法调用了eat方法，故此时eat方法进栈
-    	3.eat方法先调用study方法，故此时study方法也进栈
-    	4.进入study方法执行打印语句，此时study方法执行完毕，弹出栈内存,返回调用处
-    	5.执行eat中的打印语句，然后调用sleep方法，故此时sleep方法入栈
-    	6.执行sleep方法中的打印语句，此时sleep方法执行完毕，弹出栈内存，返回调用处
-    	7.此时代码返回到了eat方法，而eat方法执行完比，弹出栈内存，返回main方法
-    	8.main方法执行完毕，弹出栈内存，整个流程执行完毕。
-    
-    */
-    ```
+    public static void eat() {
+        study();
+        system.out.println("吃饭");
+        sleep();
+    }
+    public static void sleep(){
+        system.out.print1n("睡觉");
+    }
+    public static void study(){
+        system.out.print1n("学习");
+    }     
+}
+
+/*
+	1.main方法先进栈
+	2.main方法调用了eat方法，故此时eat方法进栈
+	3.eat方法先调用study方法，故此时study方法也进栈
+	4.进入study方法执行打印语句，此时study方法执行完毕，弹出栈内存,返回调用处
+	5.执行eat中的打印语句，然后调用sleep方法，故此时sleep方法入栈
+	6.执行sleep方法中的打印语句，此时sleep方法执行完毕，弹出栈内存，返回调用处
+	7.此时代码返回到了eat方法，而eat方法执行完比，弹出栈内存，返回main方法
+	8.main方法执行完毕，弹出栈内存，整个流程执行完毕。
+*/
+```
 
 #### 四、基本数据类型和引用数据类型
 
